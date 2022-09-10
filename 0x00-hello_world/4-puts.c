@@ -6,7 +6,7 @@
  *
  * Return: return 1 if it's not successful otherwise 0
  */
-init main(void)
+int main(void)
 {
 	char *s = "\"Programming is like building a multilingual puzzle";
 
