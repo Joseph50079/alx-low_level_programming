@@ -22,10 +22,14 @@ int main(void)
 		printf("%d is positive\n", n);
 		n++;
 	}
-	else
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 		n--;
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
 	}
 
 	return (0);
