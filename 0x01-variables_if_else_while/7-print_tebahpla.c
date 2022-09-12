@@ -13,7 +13,7 @@ int main(void)
 	int me;
 
 
-	for (me = '0'; me <= '9'; me++)
+	for (me = 'z'; me >= 'a'; me--)
 
 	putchar(me);
 
