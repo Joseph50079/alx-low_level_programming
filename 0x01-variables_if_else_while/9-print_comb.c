@@ -17,9 +17,11 @@ int main(void)
 	{
 	putchar(me);
 
-		if (me != 9)
+	if (me != '9')
+	{
 		putchar(',');
 		putchar(' ');
+	}
 	}
 
 	putchar('\n');
