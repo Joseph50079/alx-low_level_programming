@@ -7,7 +7,9 @@
 
 int main(void)
 {
-	int z = 0;
+	int z;
+
+	z = 0;
 	
 	positive_or_negative(z);
 
