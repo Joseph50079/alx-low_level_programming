@@ -11,21 +11,17 @@ int _isupper(int c);
 {
 	int c;
 
-	c = "97";
 
-	for (c = "97")
-	{
-		for (c = "97"; c <= "122"; c++)
+	for (c = "97"; c <= "122"; c++)
 		{
 		return (0);
 		}
 
-		for (c = "65"; c <= "96"; c++)
+	for (c = "65"; c <= "96"; c++)
 		{
 		return (1);
 		}
 
-	}
 
 	return (c);
 }
