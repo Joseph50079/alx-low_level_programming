@@ -9,19 +9,10 @@
 
 int _isupper(int c)
 {
-	int c;
-
-
-	for (c = "97"; c <= "122"; c++)
-		{
-		return (0);
-		}
-
-	for (c = "65"; c <= "96"; c++)
+	if (c >= 'A' && c <= 'Z')
 		{
 		return (1);
 		}
-
-
-	return (c);
+	else
+		return (0);
 }
