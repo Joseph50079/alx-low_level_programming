@@ -9,9 +9,6 @@
  */
 int mul(int a, int b)
 {
-	if (i == a * b || b * a)
-	{
-		return (i);
-	}
-	return (0);
+
+	return (a * b);
 }
