@@ -2,15 +2,16 @@
 
 /**
  * mul - function prototype
- * @a: it multiplies the other 
+ * @a: it multiplies the other
  * @b: it is been multiplied by the other int
  * description - this function prototype multiplies two integers
  * Return: always 0
  */
 int mul(int a, int b)
 {
-	
-	
-	return (a * b || b * a);
+	if (i == a * b || b * a)
+	{
+		return (i);
+	}
 	return (0);
 }
