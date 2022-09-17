@@ -10,9 +10,7 @@
 int mul(int a, int b)
 {
 	
-	if (result = a * b || b * a)
-	{
-	return (result);
-	}
+	
+	return (a * b || b * a);
 	return (0);
 }
