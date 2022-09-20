@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	while (s[c] != '\0')
 	{
-		if (s[c] <= '\n')
+		if (s[c] = '\n')
 		{
 		putchar(s[c]);
 		}
