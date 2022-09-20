@@ -13,5 +13,7 @@ void _puts(char *str)
 
 	while (str[c] != '\0')
 	c++;
-	return (c);
+	{
+		return (c);
+	}
 }
