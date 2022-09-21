@@ -13,10 +13,10 @@ int main(void)
 
 	while (i <= 9)
 	{
-		n = 1;
+		n = 0;
 		while (n <= 9)
 		{
-			j = 2;
+			j = 0;
 			while (j <= 9)
 
 			{
