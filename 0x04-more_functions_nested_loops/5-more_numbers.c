@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * more_numbers - function print numbers in line
@@ -7,19 +8,22 @@
 
 void more_numbers(void)
 {
-	int l = '0', n;
+	int l, n;
 
-	for (l = '0'; l <= 10; l++)
+	for (l = 0; l < 10; l++)
+	{
+		for (n = 0; n <= 14; n++)
 		{
-		n = '0';
+			if (n > 9)
+			{
+				_putchar((n / 10) + n);
+			}
 
-		for (n = '0'; n <= 14; n++)
-		{
-			_putchar(n);
-			_putchar('\n');
+
+			_putchar((n % 10) + '0');
 		}
+		_putchar('\n');
 
-		_putchar(l);
 	}
 
 }
