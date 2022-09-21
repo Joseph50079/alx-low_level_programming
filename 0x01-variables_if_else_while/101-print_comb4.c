@@ -28,7 +28,7 @@ int main(void)
 				putchar(n + 48);
 				putchar(j + 48);
 
-				if (i + n + j != 170)
+				if (i + n + j != 789)
 				{
 					putchar(',');
 					putchar(' ');
