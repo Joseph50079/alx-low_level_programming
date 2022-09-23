@@ -6,24 +6,21 @@
  * _strncat - function cat with src num
  * @dest: oringin string
  * @src: src string
- *
  * @n: integer for src
+ * description - concatenate with n byte
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j, num;
+	int i, j;
 
 	for (i = 0; dest[i] != '\0'; i++)
 
-	for (j = 0; src[j] != '\0'; j++, i++)
+	for (j = 0; src[j] != '\0' && j < n; j++, i++)
 	{
 		dest[i] = src[j];
 	}
-	for (num = n; num != '\0'; num++)
-	{
-		dest[i] = num;
-	}
+
 
 	dest[i] = '\0';
 
