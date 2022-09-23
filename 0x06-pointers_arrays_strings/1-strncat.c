@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -11,7 +12,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j, n;
+	int i, j, num;
 
 	for (i = 0; dest[i] != '\0'; i++);
 
@@ -21,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[i] = src[j];
 	}
-	n = strlen(src);
+	num = strlen(src);
 
 	dest[i] = '\0';
 
