@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		int x = atoi(argv[i]);
+
 		result = result * x;
-		printf("this argv[%d]\n", i);
 	}
 
 	printf("%d\n", result);
