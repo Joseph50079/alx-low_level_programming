@@ -12,11 +12,11 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int result = 1;
+	int result = 0;
 
 	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
 	else
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		int x = strtol(argv[i], NULL, 10);
 
-		result = result * x;
+		result = result + x;
 	}
 
 	printf("%d\n", result);
