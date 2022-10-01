@@ -13,12 +13,17 @@ int main(int argc, char *argv[])
 {
 	int i, n, m;
 	int result;
-	for (i = 1; i < argc; i++)
+
+	if (argc == 0)
 	{
+		printf("Error\n");
+		return (0);
+	}
+
 		n = atoi(argv[1]);
 		m = atoi(argv[2]);
 		result = n * m;
-	}
+
 	printf("%d\n", result);
 
 	return (0);
