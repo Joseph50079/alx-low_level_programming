@@ -1,2 +1,2 @@
 #!/bin/bash
-ar rc libmy.a ./*.c*
+ar rc libmy.a ./*.o*
