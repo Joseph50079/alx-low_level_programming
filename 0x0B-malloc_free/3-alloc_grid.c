@@ -14,9 +14,9 @@ int **alloc_grid(int width, int height)
 	int i = strlen(Width);
 	int j = strlen(height);
 	int w, h;
-	int *t;
+	int **t;
 
-	t = malloc(sizeof(int) * i) * j;
+	t = (int **) malloc(sizeof(int) * i) * j;
 
 	if (t == NULL)
 	{
