@@ -5,12 +5,13 @@
  * main - funtion
  * @argc: counts
  * @argv: arrays
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
 	int i, x;
-	int coin[] = {25,10,5,2,1};
+	int coin[] = {25, 10, 5, 2, 1};
 	int count = 0;
 	int num = sizeof(coin) / sizeof(coin[0]);
 	int total;
@@ -33,7 +34,7 @@ int main(int argc, char *argv[])
 			coin[i]++;
 		}
 		else
-			count++;
+		count++;
 		x = x - coin[i];
 	 }
 	total = count;
