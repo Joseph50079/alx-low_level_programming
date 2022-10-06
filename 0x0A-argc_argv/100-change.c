@@ -27,18 +27,16 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	for (i = 0; 1 < num; i++)
+	for (i = 0; i < num && x >= 0; i++)
 	{
-		if (x < coin[i])
+		while (x >= coin[i])
 		{
-			coin[i]++;
+			count++;
+			x -= coin[i];
 		}
-		else
-		count++;
-		x = x - coin[i];
-	 }
+	}
 	total = count;
-	printf("%i", total);
+	printf("%i\n", total);
 
 	return (0);
 }
