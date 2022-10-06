@@ -32,7 +32,6 @@ char *argstostr(int ac, char **av)
 	str = (char *) malloc(c);
 	if (str == NULL)
 		return (NULL);
-
 	k = 0;
 	/* Concatenates every argument to the string str */
 	for (i = 0; i < ac; i++)
@@ -50,6 +49,5 @@ char *argstostr(int ac, char **av)
 		}
 	}
 	str[k] = '\0';
-
 	return (str);
 }
