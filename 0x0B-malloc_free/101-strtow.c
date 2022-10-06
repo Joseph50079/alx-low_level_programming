@@ -92,7 +92,7 @@ int *count_char(char *str, int c)
 		{
 			for (j = i; str[j] != '\0'; j++)
 			{
-				if (str[j]  == ' '
+				if (str[j]  == ' ')
 				{
 					strlen[k] = s;
 					k++;
