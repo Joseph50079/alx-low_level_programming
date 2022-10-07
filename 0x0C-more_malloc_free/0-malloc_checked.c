@@ -5,6 +5,7 @@
 /**
  * malloc_checked - function check malloc
  * @b: integer
+ * Return: ptr
  */
 
 void *malloc_checked(unsigned int b)
