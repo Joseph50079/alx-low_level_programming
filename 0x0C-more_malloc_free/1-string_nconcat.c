@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *strin_nconcat - function
+ * *strin_nconcat - function concatenate two string into memory
  * @s1: string 1
  * @s2: string 2
  * @n: number set to s2
@@ -31,5 +31,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 	}
 	ptr[sum - 1] = '\0';
+	free(ptr);
 	return (ptr);
 }
