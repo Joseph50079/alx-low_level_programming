@@ -28,9 +28,7 @@ int *array_range(int min, int max)
 	}
 	for (i = 0; i < ma && mi < ma; i++)
 	{
-	
 		ptr[i] = mi;
-	
 		mi++;
 	}
 	return (ptr);
