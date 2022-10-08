@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j = 0, c1 = strlen(s1);
-	unsigned int sum = strlen(s1) + strlen(s2);
+	unsigned int sum = strlen(s1) + strlen(s2) + 1;
 	char *ptr;
 
 	ptr = malloc(sizeof(char) * sum);
