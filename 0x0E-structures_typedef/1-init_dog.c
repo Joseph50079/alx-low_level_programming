@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stdlib.h>
 /**
  * init_dog - function initializing structure
  * @d: struct dog local variable
@@ -9,9 +10,13 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d;
-		d = name;
-		d = age;
-		d = owner;
+	d = (struct dog *)malloc(sizeof(struct dog));
+	if (d == NULL)
+	{
+		return;
+	}
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 
 }
