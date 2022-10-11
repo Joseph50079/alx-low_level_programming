@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * init_dog - function initializing structure
  * @d: struct dog local variable
