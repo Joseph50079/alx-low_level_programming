@@ -3,7 +3,8 @@
 #include "dog.h"
 
 /**
- *
+ * free_dog - frees dog
+ * @d: parameter
  */
 
 void free_dog(dog_t *d)
