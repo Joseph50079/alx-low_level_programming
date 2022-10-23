@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "list.h"
 
 /**
  * print_list - function to print list
@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	size_t count = 0;
 	list_t *ptr;
   
-	ptr = h;
+	ptr = (list_t *)h;
 	
 
 	
