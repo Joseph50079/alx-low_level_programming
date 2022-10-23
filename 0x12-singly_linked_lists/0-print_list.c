@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - function to print list
@@ -12,12 +12,12 @@ size_t print_list(const list_t *h)
 
 	size_t count = 0;
 	list_t *ptr;
-  
-	ptr = (list_t *)h;
-	
 
-	
-	while(ptr != NULL)
+	ptr = (list_t *)h;
+
+
+
+	while (ptr != NULL)
 	{
 		if (ptr->str == NULL)
 	{
