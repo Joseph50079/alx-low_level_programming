@@ -2,22 +2,23 @@
 
 /**
  * free_list - frees node
- * @h: header address
+ * @head: header address
  */
 
 void free_list(list_t *head)
 {
 	list_t *ptr = head;
+
 	if (head == NULL)
 	{
 		return;
 	}
 	head = ptr;
 	while (ptr != NULL)
-		{
-			free(ptr->str);
-			free(ptr);
-			ptr = ptr->next;
-		}
+	{
+		free(ptr->str);
+		free(ptr);
+		ptr = ptr->next;
+	}
 	ptr = NULL;
 }
