@@ -6,6 +6,7 @@
  * add_node - add more node
  * @head: head pointer
  * @str: string
+ * Return: ptr
  */
 
 list_t *add_node(list_t **head, const char *str)
