@@ -37,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	ntext = write(0, text, ntext);
+	ntext = write(1, text, ntext);
 	if (ntext == -1)
 	{
 		free(text);
