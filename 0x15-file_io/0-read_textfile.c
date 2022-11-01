@@ -2,7 +2,8 @@
 
 /**
  * read_textfile - reads file from filename
- * @filname: namme of file
+ *
+ * @filename: name of file
  * @letters: contents of file
  * Return: ntext
  */
@@ -13,6 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *text;
 	ssize_t ntext;
 
+	if (!filename)
+	{
+		return (0);
+	}
 	text = malloc(sizeof(char) * letters + 1);
 	if (text == NULL)
 	{
@@ -23,21 +28,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		free(text);
 		close(fd);
-		return (-1);
+		return (0);
 	}
 	ntext = read(fd, text, letters);
 	if (ntext == -1)
 	{
 		free(text);
 		close(fd);
-		return (-1);
+		return (0);
 	}
 	ntext = write(0, text, ntext);
 	if (ntext == -1)
 	{
 		free(text);
 		close(fd);
-		return (-1);
+		return (0);
 	}
 	free(text);
 	close(fd);
