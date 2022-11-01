@@ -6,6 +6,7 @@
  * @letters: contents of file
  * Return: ntext
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -17,24 +18,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	fd = open(filename, O_RDWR);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
 		free(text);
 		close(fd);
+		return (-1);
 	}
 	ntext = read(fd, text, letters);
 	if (ntext == -1)
 	{
 		free(text);
 		close(fd);
+		return (-1);
 	}
 	ntext = write(0, text, ntext);
 	if (ntext == -1)
 	{
 		free(text);
 		close(fd);
-		return (0);
+		return (-1);
 	}
 	free(text);
 	close(fd);
