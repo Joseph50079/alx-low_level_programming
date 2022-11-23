@@ -12,11 +12,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list arg;
 
+	va_start(arg, n);
+
 	if (n == 0)
 	{
 		return;
 	}
-	va_start(arg, n);
 	for (i = 0; i < n; i++)
 	{
 		char *x = va_arg(arg, char *);
@@ -38,6 +39,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 		}
 	}
-	_putchar('\n');
 	va_end(arg);
+	putchar('\n');
+
 }
