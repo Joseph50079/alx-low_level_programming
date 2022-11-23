@@ -11,10 +11,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for(i = 0; i < n; i++)
 	{
-		int *x = va_arg(arg, int *);
+		int x = va_arg(arg, int);
 		if (separator != NULL)
 		{
-			printf("%d%s", *x, separator);
+			printf("%d%s", x, separator);
 		}
 	}
 	putchar('\n');
