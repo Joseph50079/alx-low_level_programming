@@ -1,6 +1,10 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 
-
+/**
+ * print_strings - prints arguments of strings value
+ * @separator: strings separator
+ * @n: number of printable stings arguments
+ */
 
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -16,6 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		char *x = va_arg(arg, char *);
+
 		if (!separator)
 		{
 			printf("%s", x);
