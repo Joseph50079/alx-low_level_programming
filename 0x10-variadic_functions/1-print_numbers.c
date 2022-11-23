@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_number - function prints argument of int value
+ * print_numbers - function prints argument of int value
  * @separator: separates the values
  * @n: number of arguments printable
  */
@@ -22,9 +22,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (separator != NULL)
 		{
 			printf("%d", x);
-			if (i < (n -1))
+			if (i < (n - 1))
 			{
-				printf("%s", seperator);
+				printf("%s", separator);
 			}
 		}
 		else
