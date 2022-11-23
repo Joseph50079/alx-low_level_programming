@@ -14,11 +14,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(arg, n);
 
-	if (n == 0)
-	{
-		printf("%s", separator);
-		return;
-	}
 	for (i = 0; i < n; i++)
 	{
 		char *x = va_arg(arg, char *);
