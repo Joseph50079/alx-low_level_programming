@@ -4,7 +4,7 @@
  * add_dnodeint_end - function add double linked node to end
  * @head: head pointer
  * @n: dlistint_t data
- * Return: *headHDHHHKGKGASDGFKGDJASD,BBJB,,BB,,,
+ * Return: *head
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
@@ -23,7 +23,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (*head == NULL)
 	{
 		temp->prev = NULL;
-		head = temp;
+		*head = temp;
 	}
 	temp->n = n;
 	while (ptr != NULL)
