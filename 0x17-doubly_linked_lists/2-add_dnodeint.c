@@ -4,6 +4,7 @@
  * add_dnodeint - function adds node
  * @head: head pointer
  * @n: dlistint data
+ * Return: *head
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
