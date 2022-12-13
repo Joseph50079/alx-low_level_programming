@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
   * _strlen - get the length of a string
@@ -6,7 +7,7 @@
   *
   * Return: the length of a string
   */
-unsigned int _strlen(char *s)
+unsigned int __strlen(char *s)
 {
 	unsigned int len = 0;
 
@@ -29,8 +30,8 @@ unsigned int _strlen(char *s)
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	unsigned int s_len = _strlen(s);
-	unsigned int accept_len = _strlen(accept);
+	unsigned int s_len = __strlen(s);
+	unsigned int accept_len = __strlen(accept);
 
 	unsigned int i;
 	unsigned int j;
