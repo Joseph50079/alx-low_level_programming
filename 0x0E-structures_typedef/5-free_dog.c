@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * free_dog - frees dog
+ * free - free struct dog_t
  * @d: parameter
  */
 
@@ -13,5 +13,7 @@ void free_dog(dog_t *d)
 	{
 		return;
 	}
+	free(d->name);
+	free(d->owner);
 	free(d);
 }
