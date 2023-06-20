@@ -4,6 +4,39 @@
 #include "dog.h"
 
 /**
+ * _strcopy - copy from src to dest
+ * @dest: destination
+ * @src: source
+ * Return: dest
+ */
+
+char *_strcopy(char *dest, char *src)
+{
+
+	int i;
+
+	if (*src == NULL)
+	{
+		return (NULL);
+	}
+
+	dest = malloc(strlen(src) + 1 * sizeof(char));
+	if (*dest == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+
+
+
+/**
  * *new_dog - create new dog
  * @name: dog name
  *
@@ -22,8 +55,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	ptr->name = name;
-	ptr->owner = owner;
+	ptr->name = _strcopy(ptr->name, name);
+	ptr->owner = _strcopy(ptr->owner, owner);
 	ptr->age = age;
 
 
