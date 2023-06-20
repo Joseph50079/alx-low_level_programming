@@ -3,8 +3,9 @@
 #include "dog.h"
 
 /**
- * free - free struct dog_t
+ * free_dog - free struct dog_t
  * @d: parameter
+ *
  */
 
 void free_dog(dog_t *d)
