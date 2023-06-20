@@ -6,6 +6,7 @@
  * description - print numbers in double digit with putchar
  * Return: return 0
  */
+
 int main(void)
 {
 
@@ -18,23 +19,21 @@ int main(void)
 		{
 			j = 0;
 			while (j <= 9)
-
 			{
 
-			if (i != n && i < n && n != j && n < j)
-
-			{
-				putchar(i + 48);
-				putchar(n + 48);				putchar(j + 48);
-
-				if (i != 7)
+				if (i != n && i < n && n != j && n < j)
 				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			++j;
+					putchar(i + 48);
+					putchar(n + 48);
+					putchar(j + 48);
 
+					if (i != 7)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				++j;
 			}
 			++n;
 		}
