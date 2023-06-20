@@ -25,15 +25,13 @@ int main(void)
 
 			{
 				putchar(i + 48);
-				putchar(n + 48);
-				putchar(j + 48);
+				putchar(n + 48);				putchar(j + 48);
 
-				if (i + n + j != 789)
+				if (i != 7)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-
 			}
 			++j;
 
