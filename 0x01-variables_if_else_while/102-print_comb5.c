@@ -8,26 +8,28 @@
 
 int main(void)
 {
-	int i = 0, n = 0;
+	int i = 0, n;
 
 	while (i < 100)
 	{
+		n = 0;
 		while (n < 100)
 		{
-			if (i < n)
+			if (n > i)
 			{
 				putchar((i / 10) + '0');
 				putchar((i % 10) + '0');
 				putchar(' ');
 				putchar((n / 10) + '0');
 				putchar((n % 10) + '0');
-				if (i != 98 && n != 99)
+
+				if (i != 98)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			n++;
+			++n;
 		}
 		++i;
 	}
