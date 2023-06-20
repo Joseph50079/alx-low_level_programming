@@ -15,13 +15,7 @@ char *_strcopy(char *dest, char *src)
 
 	int i;
 
-	if (*src == NULL)
-	{
-		return (NULL);
-	}
-
-	dest = malloc(strlen(src) + 1 * sizeof(char));
-	if (*dest == NULL)
+	if (src == NULL)
 	{
 		return (NULL);
 	}
@@ -55,10 +49,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
+	ptr->name = malloc(strlen(name) + 1 * sizeof(char));
+	if (ptr->name == NULL)
+	{
+		return (NULL);
+	}
+
+	ptr->owner = malloc(strlen(owner) + 1 * sizeof(char));
+	if (ptr->owner == NULL)
+	{
+		return (NULL);
+	}
+
 	ptr->name = _strcopy(ptr->name, name);
 	ptr->owner = _strcopy(ptr->owner, owner);
 	ptr->age = age;
-
 
 	return (ptr);
 }
