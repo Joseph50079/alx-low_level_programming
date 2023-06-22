@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
 	s = argv[2];
 
-	if ((*s == '/' && num2 == 0) || (*s == ' ' && num2 == 0))
+	if ((*s == '/' && num2 == 0) || (*s == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
