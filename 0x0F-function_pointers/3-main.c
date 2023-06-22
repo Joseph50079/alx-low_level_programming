@@ -29,14 +29,15 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	op = get_op_func(s)(num1, num2);
 
-	if (s[1] != '\0' || get_op_func(s) == NULL)
+	if (s[1] != '\0' || get_op_func(s) == NULL || !s)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
+	op = get_op_func(s)(num1, num2);
 	printf("%d\n", op);
+
 	return (0);
 }
