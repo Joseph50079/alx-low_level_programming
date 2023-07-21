@@ -13,7 +13,7 @@ char *_getenv(char *path)
 	{
 	
 		var = strtok(environ[i], "=");
-		if (var == path)
+		if (strcmp(var, path) == 0)
 		{
 			val = strtok(NULL, "=");
 			return (val);
