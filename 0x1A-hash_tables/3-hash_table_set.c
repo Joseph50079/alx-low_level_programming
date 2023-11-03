@@ -12,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	char *value_copy;
 	unsigned long int n, i = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *ptr, *node = malloc(sizeof(hash_node_t));
+	hash_node_t *node = malloc(sizeof(hash_node_t));
 
 	if (node == NULL || key == NULL || value == NULL)
 	{
@@ -44,4 +44,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 	}
+
+	ht->array[i] = node;
+
+	return (1);
 }
