@@ -29,6 +29,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	value_copy = strdup(value);
 	if (value_copy == NULL)
 		return (0);
+	if (ht->array[i] == NULL)
+	{
+		ht->array[i] = node;
+		return (1);
+	}
 
 	for (n = i; ht->array[n]; n++)
 	{
@@ -38,21 +43,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			ht->array[n]->value = value_copy;
 			return (1);
 		}
-	}
-
-	if (ht->array[i] != NULL)
-	{	
-		ptr = ht->array[i];
-		while (ptr->next)
-			ptr = ptr->next;
-
-		ptr->next = node;
-		return (1);
-	}
-	else
-	{
-		ht->array[i] = node;
-
-		return (1);
 	}
 }
