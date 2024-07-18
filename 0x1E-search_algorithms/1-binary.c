@@ -12,7 +12,7 @@ int binary_search(int *array, size_t size, int value)
 {
 	int i;
 	int left = 0;
-	int right = (int) size - 1;
+	int right = (int)size - 1;
 	int m;
 
 
@@ -41,7 +41,9 @@ int binary_search(int *array, size_t size, int value)
 			right = m - 1;
 		}
 		else
+		{
 			left = m + 1;
+		}
 
 	}
 	return (-1);
