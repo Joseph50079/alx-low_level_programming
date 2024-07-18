@@ -8,7 +8,7 @@
  * Return: -1 if failed or index value if found
  */
 
-int binary_search(int *array, size_t size, int value)
+int advanced_binary(int *array, size_t size, int value)
 {
 	int i, *ptr, result;
 	int index = (int) size / 2;
@@ -33,12 +33,12 @@ int binary_search(int *array, size_t size, int value)
 	}
 	else if (value < array[index])
 	{
-		return binary_search(array, index, value);
+		return advanced_binary(array, index, value);
 	}
 	else
 	{
 		ptr = &array[index + 1];
-		result = binary_search(ptr,  size - index - 1, value);
+		result = advanced_binary(ptr,  size - index - 1, value);
 		if (result != -1)
 			return result + index + 1;
 	}
